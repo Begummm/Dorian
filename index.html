@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A mon manito 💕</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hearts-bg"></div>
+
+    <div class="container">
+        <h1>Je suis désolé(e) d’avoir fait la tête hier et d’avoir un peu exagéré un problème qu’on aurait pu régler entre nous. Tu peux me pardonner ?</h1>
+
+        <div class="gif-container">
+            <img id="cat-gif" src="https://media.tenor.com/EBV7OT7ACfwAAAAj/u-u-qua-qua-u-quaa.gif" alt="cute character">
+        </div>
+
+        <div class="buttons">
+            <button id="yes-btn" onclick="handleYesClick()">Oui</button>
+            <button id="no-btn" onclick="handleNoClick()">Non</button>
+        </div>
+        <div id="tease-toast"></div>
+    </div>
+
+    <audio id="bg-music" loop autoplay muted>
+        <source src="music/Angela.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="music-toggle" onclick="toggleMusic()" title="Toggle music">🔊</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
